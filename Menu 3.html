@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amarelo Sandwich Shop Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+    }
+
+    .menu {
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .grid-item {
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        padding: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    ul ul {
+        margin-left: 20px;
+        list-style-type: disc;
+        background-color: #fff;
+    }
+
+    ul ul li {
+        background-color: #fff;
+        padding: 5px;
+        border: none;
+        border-left: 2px solid #ddd;
+        margin: 5px 0;
+    }
+
+    strong {
+        color: #d9534f;
+    }
+
+</style>
+<body>
+    <div class="menu">
+        <h1>Amarelo Sandwich Shop</h1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2>Breakfast (till 12pm)</h2>
+                <ul>
+                    <li>Filled Morning Roll
+                        <ul>
+                            <li>Single: £3.25</li>
+                            <li>Double: £3.95</li>
+                            <li>Options: Bacon, link sausage, free range scrambled egg, black pudding, haggis, vegan haggis</li>
+                        </ul>
+                    </li>
+                    <li>Toasted Croissant
+                        <ul>
+                            <li>Butter & jam (strawberry): £3.25</li>
+                            <li>Ham & cheese: £3.50</li>
+                        </ul>
+                    </li>
+                    <li>Toast
+                        <ul>
+                            <li>Free range scrambled eggs: £4.50</li>
+                            <li>Extra item: £1.00</li>
+                            <li>Options: Bacon, link sausage, black pudding, haggis, avocado</li>
+                        </ul>
+                    </li>
+                    <li>Granola: £4.25
+                        <ul>
+                            <li>Served with yogurt & honey</li>
+                            <li>Add banana: £0.50</li>
+                            <li>Add peanut butter: £0.50</li>
+                        </ul>
+                    </li>
+                    <li>Porridge: £4.50
+                        <ul>
+                            <li>Served with banana & honey</li>
+                            <li>Add peanut butter: £0.50</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h2>Lunch (all day)</h2>
+                <ul>
+                    <li>Sandwich Roll: £4.70
+                        <ul>
+                            <li><b>Classic</b> ham, cheese mustard mayo, tomato, mixed leaves</li>
+                            <li><b>The 14th</b> mayo-ketchup, chicken, cheese, bacon, mixed leaves</li>
+							<li><b>Chicken & cheese</b> roasted peppers, spinach, red pesto</li>
+							<li><b>Tuna crunch</b> mayo, cucumber tomato, red onion, red peppers</li>
+							<li><b>Sunny bite</b> sun-dried tomatoes,  hummus, cheese, red onion, spinach</li>
+							<li><b>Zoe</b> fresh mozzarella, tomato, green pesto, red onion, spinach, balsamic glaze vinegar</li>
+							<li><b>Spicy vegan</b> caramelised onion, vegan mayo, jalapeños, sweet potato pakora, mixed leaves</li>
+                            <!-- Add more items as needed -->
+                        </ul>
+                    </li>
+                    <li>Toastie: £4.90
+                        <ul>
+                            <li><b>Ham</b> • cheese • butter</li>
+                            <li><b>Salami</b> • cheese • tomato</li>
+							<li><b>Feta</b> • green pesto • roasted peppers • mixed leaves</li>
+                            <!-- Add more items as needed -->
+                        </ul>
+                    </li>
+                    <!-- Add more categories and items as needed -->
+                </ul>
+            </div>
+        </div>
+        <p><strong>Note:</strong> If you have a food allergy or special dietary requirements, please inform a member of staff.</p>
+    </div>
+</body>
+</html>

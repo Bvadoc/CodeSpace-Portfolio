@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+	  body {
+	   background: url('local.jpg') no-repeat center center fixed;
+	   background-size: 100% auto; 
+	   margin: 0; 
+       height: 100%;	  
+	 } 
+	 .content {
+	   position: absolute; 
+	   top: 0%;
+	   left: 50%;
+	   transform: translate(-50%, 0%);
+	   z-index: 1;
+	   color: white;
+	   text-align: center;
+	   width: 100%;
+	 }
+	 .form-container{
+	   margin-top: 200px;
+	 }
+	 .container {
+	   text color: black;
+	 }
+	</style>
+ </head> 
+ <body class="btn-lighter">
+    <div class="content">
+       <h1>Welcome to our Cafe</h1>
+	   <p>Please login or register below</p>
+    </div>
+    <div class="container text-dark">
+        <div class="form-container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Register</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                    <form class="mt-3">
+                        <div class="form-group">
+                            <label for="loginEmail"><b>Email address</b></label>
+                            <input type="email" class="form-control" id="loginEmail" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword"><b>Password</b></label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-info">Login</button>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                    <form class="mt-3">
+                        <div class="form-group">
+                            <label for="registerEmail"><b>Email address</b></label>
+                            <input type="email" class="form-control" id="registerEmail" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="registerPassword"><b>Password</b></label>
+                            <input type="password" class="form-control" id="registerPassword" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="registerConfirmPassword"><b>Confirm Password</b></label>
+                            <input type="password" class="form-control" id="registerConfirmPassword" placeholder="Confirm Password">
+                        </div>
+                        <button type="submit" class="btn btn-info">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+	</div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ </body>
+</html>	
+
